@@ -1,26 +1,23 @@
---INSERT INTO Курение(
-  --                  Человек,
-  --Время
---)
---VALUES
---(1, 'Валера'),
---(2, 'Женя'),
---(3, NULL);
+-- CREATE TABLE IF NOT EXISTS test2 (
+-- id     SERIAL      PRIMARY KEY,
+-- person VARCHAR(50) NOT NULL,
+-- count  SMALLSERIAL NOT NULL
+-- );
 
+--INSERT INTO test2(person, count) VALUES ('Валерa', 10),
+--                                       ('Женя', 10),
+--                                      ('Саня', 10),
+--                                       ('Вова', 17);
 
---CREATE TABLE test
-(
-  --  Человек
-  --    TEXT,
-  -- Количество_перекуров
-  --   INTEGER
-);
+--SELECT * FROM test2
 
-INSERT INTO test(
-                 "Человек",
-                      "Количество_перекуров" )
-                 VALUES
-    ('Валера', 11),
-    ('Женя', 12),
-    ('Саня', 12),
-    ('Вова', NULL);
+--UPDATE test2
+--SET count = '15'
+--WHERE id = 1;
+
+--DELETE FROM test2
+--WHERE id = 1;
+
+--INSERT INTO test2(person, count) VALUES ('Валерa', 10);
+
+--DROP TABLE test2;
